@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/land
+DEVICE_PATH := device/nokia/PLE
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -40,13 +40,13 @@ TARGET_USES_64_BIT_BINDER := true
 
 # kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x00f00000 --tags_offset 0x00000100
 
-TARGET_KERNEL_CONFIG := land_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
+TARGET_KERNEL_CONFIG := PLE_defconfig
+TARGET_KERNEL_SOURCE := kernel/nokia/PLE
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
@@ -103,10 +103,10 @@ QCOM_BT_USE_SMD_TTY := true
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
-TARGET_USES_MEDIA_EXTENSIONS := true
-TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
-TARGET_TS_MAKEUP := true
-TARGET_USES_QTI_CAMERA_DEVICE := true
+# TARGET_USES_MEDIA_EXTENSIONS := true
+# TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+# TARGET_TS_MAKEUP := true
+# TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Charger
 WITH_LINEAGE_CHARGER := false
@@ -189,7 +189,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 26301931008
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_FLASH_BLOCK_SIZE := 131072
-
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
@@ -210,15 +209,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Treble
-ENABLE_VENDOR_IMAGE := true
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_VENDORIMAGE_PARTITION_SIZE := 536870912
-TARGET_COPY_OUT_VENDOR := vendor
-PRODUCT_VENDOR_MOVE_ENABLED := true
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-PRODUCT_FULL_TREBLE_OVERRIDE := true
-PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
-PRODUCT_SHIPPING_API_LEVEL := 23
+
  
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
@@ -233,4 +224,4 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/xiaomi/land/BoardConfigVendor.mk
+-include vendor/nokia/PLE/BoardConfigVendor.mk

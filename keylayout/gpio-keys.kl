@@ -27,6 +27,10 @@
 
 key 115   VOLUME_UP
 key 114   VOLUME_DOWN
-key 102   HOME            WAKE
+key 102   HOME
 key 528   FOCUS
 key 766   CAMERA
+key 155   ENVELOPE
+key 231   CALL
+key 199   NOTIFICATION
+key 196   ASSIST

@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/land
+DEVICE_PATH := device/nokia/PLE
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -27,20 +27,19 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from land device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := land
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_land
+PRODUCT_BRAND := Nokia
+PRODUCT_DEVICE := PLE
+PRODUCT_MANUFACTURER := Nokia
+PRODUCT_NAME := lineage_PLE
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-nokia
 
-TARGET_VENDOR_PRODUCT_NAME := land
+TARGET_VENDOR_PRODUCT_NAME := PLE
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="land-user 6.0.1 MMB29M V9.5.5.0.MALMIFA release-keys"
+
 
 # Set BUILD_FINGERPRINT variable
-BUILD_FINGERPRINT := "Xiaomi/land/land:6.0.1/MMB29M/V9.5.5.0.MALMIFA:user/release-keys"
+
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
