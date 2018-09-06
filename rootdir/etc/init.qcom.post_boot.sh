@@ -220,7 +220,7 @@ function 8937_sched_dcvs_hmp()
     echo 50000 > /proc/sys/kernel/sched_freq_dec_notify
 
 }
-target=`getprop ro.board.platform`
+target=`	`
 
 function configure_memory_parameters() {
     # Set Memory paremeters.
@@ -1914,6 +1914,8 @@ case "$target" in
                 echo 1 > /sys/module/lpm_levels/lpm_workarounds/dynamic_clock_gating
                 # Enable timer migration to little cluster
                 echo 1 > /proc/sys/kernel/power_aware_timer_migration
+
+		chmod 777 /sys/module/wlan/parameters/*
                 # Set Memory parameters
                 configure_memory_parameters
             ;;
@@ -3245,4 +3247,5 @@ esac
 misc_link=$(ls -l /dev/block/bootdevice/by-name/misc)
 real_path=${misc_link##*>}
 setprop persist.vendor.mmi.misc_dev_path $real_path
+chmod 777 /sys/module/wlan/parameters/*
 

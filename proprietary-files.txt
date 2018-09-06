@@ -1,6 +1,22 @@
 # Audio dirac - from stock - MIUI Beta 8.4.12
 
 
+vendor/etc/audio/audio_policy_configuration.xml
+vendor/etc/audio_effects.conf
+vendor/etc/audio_output_policy.conf
+vendor/etc/audio_platform_info_d1c.xml
+vendor/etc/audio_platform_info_extcodec.xml
+vendor/etc/audio_platform_info_ms3.xml
+vendor/etc/audio_platform_info_nd1.xml
+vendor/etc/audio_platform_info_oc6.xml
+vendor/etc/audio_platform_info_ple.xml
+vendor/etc/audio_platform_info_vzs_int.xml
+vendor/etc/audio_platform_info_vzs.xml
+vendor/etc/audio_platform_info.xml
+vendor/etc/audio_policy.conf
+vendor/etc/audio_policy_configuration.xml
+vendor/etc/audio_policy_volumes.xml
+vendor/etc/audio_tuning_mixer.txt
 
 
 
