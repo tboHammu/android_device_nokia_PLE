@@ -119,6 +119,14 @@ vendor/etc/acdbdata/D1C/Headset_cal.acdb
 vendor/etc/acdbdata/D1C/Speaker_cal.acdb
 vendor/etc/acdbdata/D1C/Hdmi_cal.acdb
 
+
+etc/NXPsmartamp/settings/Tfa9891_PLE.cnt
+etc/NXPsmartamp/settings/Tfa9891_PLE.ini
+etc/NXPsmartamp/settings/Tfa9891_PLE_bot.cnt
+etc/NXPsmartamp/settings/Tfa9891_PLE_bot.ini
+etc/NXPsmartamp/settings/Tfa9891_PLE_top.cnt
+etc/NXPsmartamp/settings/Tfa9891_PLE_top.ini
+
 # Camera - from stock - MIUI Beta 8.4.12
 vendor/bin/mm-qcamera-daemon
 vendor/lib/hw/camera.msm8937.so 
