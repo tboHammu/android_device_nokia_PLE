@@ -127,6 +127,10 @@ etc/NXPsmartamp/settings/Tfa9891_PLE_bot.ini
 etc/NXPsmartamp/settings/Tfa9891_PLE_top.cnt
 etc/NXPsmartamp/settings/Tfa9891_PLE_top.ini
 
+vendor/bin/init.ple.smartamp_enable.sh
+vendor/bin/init.ple.smartamp_default.sh
+bin/FIH_SmartAmp
+
 # Camera - from stock - MIUI Beta 8.4.12
 vendor/bin/mm-qcamera-daemon
 vendor/lib/hw/camera.msm8937.so 
