@@ -225,6 +225,9 @@ on boot
 
     insmod /vendor/lib/modules/shexfat.ko
     insmod /system/vendor/lib/modules/wlan.ko con_mode=5
+	
+
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 # msm specific files that need to be created on /data
 on post-fs-data
