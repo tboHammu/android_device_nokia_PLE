@@ -29,8 +29,18 @@ vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Audio libraries - from TA-1021 - OPR1.170623.026
+bin/FIH_SmartAmp
+lib/lib_FIH_SmartAmp.so
+lib/libqct_resampler.so
+vendor/etc/mixer_paths.xml
 etc/permissions/audiosphere.xml
 -framework/audiosphere.jar
+vendor/etc/drc/drc_cfg_5.1.txt
+vendor/etc/drc/drc_cfg_AZ.txt
+vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
+vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
+vendor/lib/hw/audio.primary.msm8937.so
+-vendor/lib/libaudio_log_utils.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -40,11 +50,17 @@ vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libqtigef.so
+vendor/lib/libdrc.so
+vendor/lib/libsurround_3mic_proc.so
+vendor/lib/libsurround_proc.so
+vendor/lib/surround_sound_headers.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
+vendor/lib/soundfx/libswdap.so
+-vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -58,6 +74,13 @@ vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
+vendor/lib64/soundfx/libswdap.so
+
+vendor/lib/libdlbdsservice.so
+vendor/lib/libdlbmemoryservice.so
+vendor/lib/libdlbdapstorage.so
+vendor/lib/vendor.dolby.hardware.dms@1.0.so
+vendor/lib/vendor.dolby.hardware.dms@1.0-impl.so
 
 # Bluetooth - from tissot - OPM1.171019.019
 lib/com.qualcomm.qti.bluetooth_audio@1.0.so
